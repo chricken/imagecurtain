@@ -1,0 +1,45 @@
+#divider {
+    position: absolute;
+    display: block;
+    top: 0px;
+    bottom: 15px;
+    width: 10px;
+    left: 460px;
+    transform: translateX(-5px);
+    background: #fff;
+
+    /* box-shadow: 0 0 2px 2px rgba(0,0,0,0.5); */
+    outline: 1px solid #000;
+    /* transition: all 300ms linear; */
+    cursor: pointer;
+}
+
+#divider:hover {
+    width: 20px;
+    transform: translateX(-10px);
+    outline: 2px solid #000;
+}
+
+#divider #handle {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 43px;
+    transform: translateY(-25px) translateX(-20px);
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 7px;
+    /* transition: all 300ms linear; */
+}
+
+#divider:hover #handle {
+    transform: translateY(-25px) translateX(-15px);
+}
+
+#handleIcon {
+    position: absolute;
+    /* outline: 2px solid #000; */
+    transform: translateX(-20px) translateY(-2px);
+}

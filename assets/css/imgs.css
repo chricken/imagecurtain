@@ -1,0 +1,23 @@
+curtain {
+    position: relative;
+    display: block;
+}
+
+#img1,
+#img2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    min-height: 300px;
+}
+
+#img1 {
+    right: 0px;
+    background-position: left center;
+}
+
+#img2 {
+    left: 460px;
+    background-position: right center;
+}
