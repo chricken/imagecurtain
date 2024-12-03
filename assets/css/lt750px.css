@@ -1,0 +1,9 @@
+@media (max-width: 750px) {
+    h1 {
+        font-size:60px;
+    }
+    curtain {
+       width: 500px;
+    }
+
+}

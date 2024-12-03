@@ -60,10 +60,10 @@ const handleUpDivider = () => {
 
 const handleMove = evt => {
     if (settings.holding) {
-        console.clear();
-        console.log(evt.clientX, evt.clientY);
-        console.log(elements.curtain.offsetLeft);
         let left = evt.clientX - elements.curtain.offsetLeft;
+        left = Math.max(0,left);
+        left = Math.min(elements.curtain.offsetWidth,left);
+        
         elements.divider.style.left = left + 'px';
         elements.img2.style.left = left + 'px';
     }
